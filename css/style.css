@@ -1,0 +1,212 @@
+body{
+    font-family: Tahoma;
+    background-color: white;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1500px;
+}
+
+
+/* Ш А П К К А
+............................................*/
+
+
+header{
+    width: 100%;
+    background-color: #343a40;
+}
+
+
+/* м е н ю
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+}
+.logotip{
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+}
+.nav_link{
+    border-bottom: 3px solid transparent;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+.nav_link:hover{
+    color: white;
+    border-bottom: 3px solid deepskyblue;
+}
+/* б у р г е р
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+.burger{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+}
+.burg{
+    color: white;
+    font-size: 1px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+@media (max-width: 550px) {
+    .menu{
+        padding: 10px 0;
+    }
+    .nav_link{
+        font-size: 1px;
+        visibility: hidden;
+    }
+    .logotip{
+        font-size: 25px;
+    }
+    .burg{
+        border: none;
+        color: #343a40;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        visibility: visible;
+    }
+    .burg:hover{
+        background-color: deepskyblue;
+        color: white;
+    }
+    .burg:focus{
+        border: none;
+        background-color: white;
+        color: #343a40;
+    }
+    .burg_link {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        border-bottom: 3px solid transparent;
+        padding: 3px 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.2s;
+    }
+    .burg_link:hover{
+        color: white;
+        border-bottom: 3px solid deepskyblue;
+    }
+    .burg_body{
+        background-color: #343a40;
+    }
+    .burg_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #343a40;
+    }
+    .burg_title{
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .burg_main{
+        height: 100%;
+        width: 65%;
+    }
+    .block_link_burg{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .btn-close{
+        width: 10px;
+        height: 10px;
+        background-color: white;
+    }
+}
+
+/* Ц Е Н Ы
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.form_blok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    padding: 25px;
+    width: 400px;
+    height: 400px;
+    border-radius: 3%;
+    border: 3px solid black;
+}
+h2{
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+.inp{
+    text-align: left;
+}
+.input{
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 10px ;
+    max-height: 50px;
+    width: 100%;
+    text-align: left;
+}
+.input2{
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    margin-bottom: 40px;
+    padding: 10px 0 10px 10px ;
+    max-height: 50px;
+    width: 100%;
+    text-align: left;
+}
+
+.get-cost{
+    color: #ffffff;
+    background-color: #343a40;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid transparent;
+
+    transition: all 0.2s;
+}
+.get-cost:hover{
+    color: white;
+    border: 3px solid deepskyblue;
+}
+
+/*M O D A L
+''''''''''''''''''''''''''''''''*/
+.modal-content{
+    border-radius: 3%;
+}
+.modal-title{
+    text-transform: uppercase;
+    font-weight: 700;
+}
